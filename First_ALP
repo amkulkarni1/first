@@ -2,7 +2,7 @@
 .data
   var1 db "Hello",13,10,'$'
  .code
-    mov ax,@data
+    mov ax,@data; Initialisaton of data segment.
     mov ds,ax
     
     mov ah,09h
