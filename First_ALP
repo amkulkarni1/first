@@ -3,12 +3,12 @@
   var1 db "Hello",13,10,'$'
  .code
     mov ax,@data
-    mov ds,ax
+    mov ds,ax;
     
-    mov ah,09h
+    mov ah,09h;
     lea dx,va1
     int 21h
     
-    mov ah,4ch
+    mov ah,4ch; termination of program
     int 21h
   END
